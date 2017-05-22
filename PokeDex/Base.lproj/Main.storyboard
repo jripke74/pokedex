@@ -48,14 +48,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fSB-Z8-Q2d">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="fSB-Z8-Q2d" customClass="PokeCellCollectionViewCell" customModule="PokeDex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="CHj-Ig-Qwe">
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="CHj-Ig-Qwe">
                                                     <rect key="frame" x="0.0" y="0.0" width="104" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="hqd-wQ-4ff"/>
@@ -79,6 +79,10 @@
                                             <constraint firstItem="CHj-Ig-Qwe" firstAttribute="top" secondItem="fSB-Z8-Q2d" secondAttribute="top" id="hmH-PW-69e"/>
                                             <constraint firstItem="CHj-Ig-Qwe" firstAttribute="leading" secondItem="fSB-Z8-Q2d" secondAttribute="leading" id="pzO-w7-sgm"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="p1y-XF-9BS" id="1Vf-vb-1Ha"/>
+                                            <outlet property="thumbImg" destination="CHj-Ig-Qwe" id="kx6-DX-dz6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -40,7 +40,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YYG-Gy-c3V">
                                 <rect key="frame" x="20" y="129" width="335" height="518"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SHC-HG-tqA">
                                     <size key="itemSize" width="104" height="104"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -48,14 +48,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="fSB-Z8-Q2d" customClass="PokeCellCollectionViewCell" customModule="PokeDex" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="fSB-Z8-Q2d" customClass="PokeCell" customModule="PokeDex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="CHj-Ig-Qwe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="100" translatesAutoresizingMaskIntoConstraints="NO" id="CHj-Ig-Qwe">
                                                     <rect key="frame" x="0.0" y="0.0" width="104" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="hqd-wQ-4ff"/>
@@ -70,6 +70,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="p1y-XF-9BS" firstAttribute="top" secondItem="CHj-Ig-Qwe" secondAttribute="bottom" id="8lb-cl-vrL"/>
                                             <constraint firstItem="p1y-XF-9BS" firstAttribute="leading" secondItem="fSB-Z8-Q2d" secondAttribute="leading" id="CrI-lo-sbz"/>
@@ -105,6 +106,9 @@
                             <constraint firstItem="Y16-sp-6WF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y6S-Ih-ZEu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collection" destination="YYG-Gy-c3V" id="D68-at-YqO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
